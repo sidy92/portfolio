@@ -1,0 +1,96 @@
+body {
+    color:black;
+    background-color:white;
+    background-image:url(../images/data.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin:0;
+    }
+
+p0{
+    color: ivory;
+    font-size: 50px;
+    position: fixed;
+    top: 10%;
+    margin-left: 20%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p1{
+    color: ivory;
+    font-size: 50px;
+    position: fixed;
+    top: 80%;
+    margin-left: 8%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+.menu {
+    display: flex;              /* Transformation en flexbox */
+    padding:0;                  /* Suppression des marges internes */
+    background-color: #ccc;     /* Ajout de la couleur d'arrière-plan */
+
+    display: flex;              /* Transformation en flexbox */
+    padding:0;                  /* Suppression des marges internes */
+    background-color: #ccc;     /* Ajout de la couleur d'arrière-plan */
+    justify-content: space-evenly;     /* Alignements des liens dans le menu */
+}
+
+.menu li {
+    list-style-type: none ;       /* Suppression des puces */
+}
+
+.menu a {
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */
+    margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: center;           /* Centrage du texte */   
+    background-color:#35C0CD;    /* Couleur d'arrière-plan */
+    color: #fff;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    transition: all 1s ;          /* Ajout des effets de transition */
+}
+
+.menu a:hover {
+    background-color: #30E396;
+    color: #307DE3;
+    border-color: #307DE3;
+}
+
+.bas{
+    position: fixed; 
+    padding: 10px 10px 10px 10px; 
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    height: 20px; 
+    background: #307DE3;
+    font-size: 20px;
+}
+
+/* pour mettre un élément que sur la gauche https://developer.mozilla.org/fr/docs/Web/CSS/position
+<div class="box" id="un">Un</div>
+.box {
+    background: red;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    color: white;
+  }
+  #un {
+    position: fixed;
+    top: 80px;
+    left: 10px;
+  }
+  .outer {
+    width: 500px;
+    height: 300px;
+    overflow: scroll;
+    padding-left: 150px;
+  }*/

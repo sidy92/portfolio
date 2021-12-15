@@ -1,0 +1,159 @@
+
+/*{
+    font-family: "poppins";
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#859398,#283048);
+}
+
+a{
+    position: relative;
+    margin: 0 20px;
+    font-size: 3rem;
+    height: 100px;
+    width: 100px;
+    background-color: whitesmoke;
+    display: inline-block;
+    border-radius: 25px;
+    transition: 0.2s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px #ffffff;
+}
+
+permet de transfomer la bordure qd la souris se pose dessus
+a:hover{
+    transform: scale(1.2);
+    border-radius: 5px 50px 5px;
+}
+
+pr mettre les logo au milieu du carré
+i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: grey;
+    transition: 0.2s ease-in-out;
+}
+
+pr mettre un peu d'animation au moment où la souris se pose dessus
+a:hover i{
+    color: white;
+    animation: bounce 0.5s ease-in-out;
+}
+
+a::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(to left, #8e2de2, #4a00e0);
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    left: 100%;
+    right: 100%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s ease-in-out; pas obliger de la garder
+}
+
+a:hover::before{
+    margin: 0px;
+    left: 50%;
+    top: 50%
+}
+
+@keyframes bounce{
+    0%{
+        font-size: 3rem;
+    }
+    50%{
+        font-size: 4rem;
+    }
+    100%{
+        font-size: 3rem;
+    }
+}*/
+
+p a{
+    position: relative;
+    margin: 0 20px;
+    font-size: 3rem;
+    height: 100px;
+    width: 100px;
+    background-color: whitesmoke;
+    display: inline-block;
+    border-radius: 25px;
+    transition: 0.2s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px #ffffff;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#859398,#283048);
+}
+
+
+.fa {
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    transform: scale(1.2);
+    border-radius: 5px 50px 5px;
+}
+
+.fa-linkedin {
+    background: white;
+    color: white;
+}
+
+.fa-insta {
+    background: white;
+    color: white;
+}
+
+.fa-gmail {
+    background: white;
+    color: white;
+}
+
+.fa-outlook {
+    background: white;
+    color: white;
+}
+
+.fa-tel {
+    background: white;
+    color: white;
+}
+
+.fa-git {
+    background: white;
+    color: white;
+}
+
+.cadre{ 
+    padding: 5px; 
+    border:solid 5px  white; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xxx-large;
+    color: white;
+}
+
+p6{
+    font-family: cursive;
+}

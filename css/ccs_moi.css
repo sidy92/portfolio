@@ -1,0 +1,165 @@
+/*pr enlever les scroll barres*/
+*{
+    margin: 0;
+}
+
+h1{
+    color: crimson;
+    font-size: xx-large;
+    font-family: cursive;
+}
+
+.cadre{ border: 1px solid black; padding: 5px; border:double 3px  crimson;}
+
+
+.bloc{
+    position: relative;
+    height: 100vh; /*hauteur*/
+    width: 100%; /*longueur*/
+    overflow: hidden;
+}
+
+.bloc video{
+    position: absolute;
+    min-width: 100%; /*Pour que sa prenne l'intégralité de  la hauteur et de la longueur*/
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: -100; /* pr mettre la vidéo en arrière plan*/
+    transform: translate(-50%, -50%); /* Pour un peu mieux centrer la vidéo*/
+}
+
+/*pr modfier l'opacité de la vidéo*/
+.bloc::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -99;
+    background-color: #2220205c;
+}
+
+/*.bloc img{
+    background-position:50% 50%;
+    z-index: -98;
+    width: 20%;
+    height: 20%;
+}*/
+
+.bloc img{
+    position        : fixed;
+    top             : 50%;
+    margin-top      : -180px;
+    margin-left: 36%;
+    width: 20%;
+    height: 55%;
+}
+
+.info legend{
+    color: red;
+    font-size: 28px;
+    font-family: monospace;
+}
+
+.info{
+    border:2px solid red;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;
+    float: left;
+    background-color: wheat;
+}
+
+.sport{
+    border:2px solid burlywood;
+    border-style: dotted;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;
+    float: right;
+    background-color: turquoise;
+}
+
+.sport legend{
+    color: blue;
+    font-size: 28px;
+    font-family: monospace;
+}
+
+/*.com{
+    position: fixed;
+    border:2px solid blue;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;
+}*/
+
+.com{
+    /*width:811px;
+    height:auto;*/
+    /*float: left;*/
+    margin-top: 25%;
+    border:1px solid #bfc2c3;
+    /*padding:0 0 0 0;
+    margin:0 0 0 5px;*/
+    border:2px solid plum;
+    border-radius:8px;
+    bottom: 200px;
+    position: fixed;
+    }
+
+.com legend{
+        color: purple;
+        font-size: 28px;
+        font-family: monospace;
+}
+
+.interet{
+    position: fixed;
+    bottom: 230px;
+    /*margin-top: 0,1%;*/
+    margin-left: 990px;
+    border:2px solid yellow;
+    border-style: groove; /*rainurée*/
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;
+    background-color: whitesmoke;
+}
+
+.interet legend{
+    color: yellowgreen;
+    font-size: 28px;
+    font-family: monospace;
+}
+
+.moi{
+    position: fixed;
+    bottom: 0;
+    margin-left: 15%;
+    margin-right: 15%;
+    border:2px solid gold;
+    border-style: dashed;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;
+    font-size: 18px;
+    font-family: cursive;
+    color: gold;
+}
+
+.moi legend{
+    color: gold;
+    font-size: 28px;
+    font-family: monospace;
+}
+
+p6{
+    font-family: cursive;
+    top: 0;
+    margin-right: 1%;
+    margin-left: 50%;
+    margin-top: 0px;
+    position: fixed;
+    color: blanchedalmond;
+}
